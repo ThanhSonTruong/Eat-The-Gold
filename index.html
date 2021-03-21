@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html><!--HTML5 doctype-->
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56793876-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-56793876-3');
+</script>
+
+	<title>Eat the Gold</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<style type="text/css">
+		/* Prevent copy paste for all elements except text fields */
+		*  { -webkit-user-select:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0); }
+		input, textarea  { -webkit-user-select:text; }
+		body { background-color:white; color:black }
+	</style>
+
+    <style type="text/css">
+        html, body {
+            position: fixed;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <!--Referencing-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js?ver=3"></script>
+	
+    <!-- <script src="intelxdk.js"></script> -->
+
+	<!-- <script type="text/javascript">
+		/* Intel native bridge is available */
+		var onDeviceReady=function(){
+		//hide splash screen
+		intel.xdk.device.hideSplashScreen();
+		};
+		document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+	</script> -->
+
+    <script>
+        $(window).on("orientationchange", function () {
+        if (window.innerHeight > window.innerWidth) {
+            alert("The orientation has changed! Please hold your device in Landscape orientation!");
+        } else if (ready === 1 && window.innerHeight < window.innerWidth && load === 0) {
+            wid = window.innerWidth;
+            hei = window.innerHeight;
+            diagonal = Math.sqrt(Math.pow(wid, 2) + Math.pow(hei, 2));
+            Load();
+            load = 1;
+        }
+        });
+
+       /*  <!-- audio = new Audio("music/Piano3(edited).mp3"); --> 
+        audio = new Audio("music/Piano3(edited).mp3"); -->
+        audio.load();
+
+        audio2 = new Audio("music/Oct29th1.mp3");
+        audio2.load();
+
+        audio3 = new Audio("music/Wolfgang_Amadeus_Mozart_-_US_ARMY_-_Mozart_overtur.mp3");
+        audio3.load();
+        
+        audio4 = new Audio("music/TheUSAFConcertBandandSingingSergeants10WinterVivaldisFourSeasons.mp3");
+        audio4.load();
+
+        audio5 = new Audio("music/Rondo_Alla_Turka.mp3");
+        audio5.load();
+
+        audio6 = new Audio("music/VR0016(edited).mp3");
+        audio6.load();
+
+
+*/
+
+        audio = new Audio("music/Piano3(edited).mp3");
+        audio.load();
+
+        audio2 = new Audio("music/From The Distance (Version 10) (Loud Version).mp3");
+        audio2.load();
+
+        audio3 = new Audio("music/Jumping Under a Willow Tree 3 (HQ).mp3");
+        audio3.load();
+        
+        audio4 = new Audio("music/Please Love Me Back(Version 2)(mp3e).mp3");
+        audio4.load();
+
+        audio5 = new Audio("music/Positivity (version 4).mp3");
+        audio5.load();
+
+        audio6 = new Audio("music/She Made Me Do It! (Loud Version).mp3");
+        audio6.load();
+        
+        audio7 = new Audio("music/Give to the Heart (version 2.1).mp3");
+        audio7.load();
+        
+        audio8 = new Audio("music/Too Kool to be a Fool (Version 2).mp3");
+        audio8.load();
+        
+
+
+
+        function show(shown, hidden, hidden2, hidden3, hidden4) {
+            document.getElementById(shown).style.display = 'block';
+            document.getElementById(hidden).style.display = 'none';
+            document.getElementById(hidden2).style.display = 'none';
+            document.getElementById(hidden3).style.display = 'none';
+            document.getElementById(hidden4).style.display = 'none';
+
+            return false;
+        }
+    </script>
+<!--ads-->
+<script data-ad-client="ca-pub-9260204094597425" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+</head>
+<body onload="preLoad()">
+<!--fb sdk-->
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=602622669870104&autoLogAppEvents=1"></script>
+
+
+    <!--this will stop any scrolling-->
+   <style>
+        body {
+        overflow: hidden;
+        }
+   </style>
+
+
+
+	<!-- content goes here-->
+
+    <!-- FB integration here
+    <div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '602622669870104',
+            xfbml: true,
+            version: 'v2.2'
+        });
+
+
+        // ADD ADDITIONAL FACEBOOK CODE HERE
+
+
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                // the user is logged in and has authenticated your
+                // app, and response.authResponse supplies
+                // the user's ID, a valid access token, a signed
+                // request, and the time the access token
+                // and signed request each expire
+                uid = response.authResponse.userID;
+                accessToken = response.authResponse.accessToken;
+            } else if (response.status === 'not_authorized') {
+                // the user is logged in to Facebook,
+                // but has not authenticated your app
+            } else {
+                // the user isn't logged in to Facebook.
+                FB.login(function () { }, { scope: 'publish_actions' });
+            }
+        });
+
+
+
+
+
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+    function postToFeed() {
+
+        // calling the API ...
+        var obj = {
+            method: 'feed',
+            link: 'http://focusandfinish.ssl.altervista.org/EatTheGold/www/index.html',
+            caption: 'My final score is: ' + score,
+            picture: 'http://focusandfinish.altervista.org/EatTheGold/www/images/GameplayETG.png',
+        };
+
+        function callback(response) {
+            console.log(response);
+            //alert("Posted Successfuly!");
+        }
+
+        FB.ui(obj, callback);
+    }
+    </script> -->
+
+
+
+     <!--ad-->
+<!--      <script>!function(d,l,e,s,c){e=d.createElement("script");e.src="//en.ad.altervista.org/js.ad/size=728X90/?ref="+encodeURIComponent(l.hostname+l.pathname)+"&r="+Date.now();s=d.scripts;c=d.currentScript||s[s.length-1];c.parentNode.insertBefore(e,c)}(document,location)</script>
+ -->
+
+
+
+    <div id="pagezero">
+
+        <img id="load" src="images/Loading.png" style="width:100%; height:100%;">
+
+        <style>
+            #pagezero{
+                display: block;
+            }
+            #load {
+                position: fixed;
+                display: block;
+            }
+        </style>
+    </div>
+
+    <div id="pageone">
+
+        
+        <img id="Rock1" src="images/Rock1.png" style="width:100%; height:100%;">
+        <img id="Title" src="images/Title.png" style="width:100%; height:100%;">
+
+        <div id="div" style="position: absolute;">
+            <a onclick="show('pagetwo', 'pagezero', 'pagethree', 'pageone', 'pagefour');" id='Start' class="ui-btn">Start</a>
+        </div>
+        <div id="Sound1" style="position: absolute;">
+            <a href="javascript:Sound();">
+                <img id="mute1"
+                     alt="Mute"
+                     border="0" />
+            </a>
+        </div>
+        <div id="like" class="fb-like" data-href="http://focusandfinishgames.net/games/eatthegold/www/index.html" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+        <!-- <div id="like" class="fb-like" data-href="http://focusandfinish.altervista.org/EatTheGold/www/index.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ -->
+    <!--     <div id="ad1">
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                document.write('<s' + 'cript type="text/javascript" src="http://en.ad.altervista.org/js.ad/size=728X90/r=' + new Date().getTime() + '"><\/s' + 'cript>');
+                /* ]]> */
+            </script>
+        </div> -->
+
+
+        <style>
+
+
+            /*.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: gold;
+  font-size: 50px;
+  background: Gray;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: Black;
+  text-decoration: none;
+}*/
+
+            #ad1 {
+                        z-index: 99;
+                        position: fixed;
+
+                    }
+            #like{
+                        position: fixed;
+                        z-index: 999;
+                    }
+            #mute1 {
+                    position: fixed;
+                    z-index: 99;
+                }
+
+                #Sound1 {
+                    position: fixed;
+                    z-index: 99;
+                }
+            #pageone {
+                display: none;
+            }
+            #Rock1{
+                position:fixed;
+            }
+            #Title{
+                position:fixed;
+            }
+            #Start {
+                        position: fixed;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #ffffff;
+                    }
+        </style>
+
+    </div>
+
+
+    <div id="pagetwo">
+        <div id="Sound2" style="position: absolute;">
+            <a href="javascript:Sound();">
+                <img id="mute2"
+                     alt="Mute"
+                     border="0" />
+            </a>
+        </div>
+
+        <canvas id="canvas"></canvas>
+
+        <img id="Rock2" src="images/Rock2.png" style="width:100%; height:100%;">
+
+        <div id="instructions">
+            <p>INSTRUCTIONS:</p>
+            <p></p>
+            <p></p>
+            <p>-Use the mouse or the touchscreen device to move the Arrow around.</p>
+            <p></p>
+            <p>-Shoot laser beams by letting go of the touchscreen/mouse button.</p>
+            <p></p>
+            <p>-Beat the enemies and/or Eat the Gold to get points and get a high score in the game.</p>
+            <p></p>
+            <p>-"Pause Button" to Pause and "Speaker Symbol" to Mute.</p>
+        </div>
+
+        <div id="div2" style="position: absolute;">
+            <a onclick="StartGame();" id='Go' class="ui-btn">Go</a>
+        </div>
+
+        <div id="div3" style="position: absolute;">
+            <a onclick="show('pageone', 'pagezero', 'pagethree', 'pagetwo', 'pagefour');" id='Back' class="ui-btn">Back</a>
+        </div>
+        <div id="like2" class="fb-like" data-href="http://focusandfinishgames.net/games/eatthegold/www/index.html" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+       <!--  <div id="like2" class="fb-like" data-href="http://focusandfinish.altervista.org/EatTheGold/www/index.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+ -->
+        <style>
+            #like2{
+                        position: fixed;
+                        z-index: 999;
+                    }
+            #mute2 {
+                    position: fixed;
+                    z-index: 99;
+                }
+
+                #Sound2 {
+                    position: fixed;
+                    z-index: 99;
+                }
+            #Back {
+                position: fixed;
+                z-index: 999;
+                z-index: 4;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            #Go {
+                position: fixed;
+                z-index: 999;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            #instructions {
+                position: fixed;
+                z-index: 3;
+            }
+            #pagetwo {
+                display: none;
+            }
+            #Rock2 {
+                position:fixed;
+            }
+            #canvas {
+                z-index: 2;
+                position: fixed;
+            }
+        </style>
+    </div>
+    <div id="pagethree">
+        <!--game page-->
+
+        <canvas id="canvas2"></canvas>
+
+        <div id="Sound3" style="position: absolute;">
+            <a href="javascript:Sound();">
+                <img id="mute3"
+                     alt="Mute"
+                     border="0" />
+            </a>
+        </div>
+
+        <div id="Pause" style="position: absolute;">
+            <a href="javascript:Stop();">
+                <img id="pause"
+                     alt="Pause"
+                     border="0" />
+            </a>
+        </div>
+
+        <div id="div4" style="position: absolute;">
+            <a onclick="show('pagetwo', 'pagezero', 'pagethree', 'pageone', 'pagefour'); endGame();" id='Back2' class="ui-btn">Quit</a>
+        </div>
+
+            <style>
+                #Back2 {
+                position: fixed;
+                z-index: 999;
+                margin: 0;
+                padding: 0;
+                background-color: #818181;
+
+                }
+                #mute3 {
+                    position: fixed;
+                    z-index: 3;
+                }
+
+                #Sound3 {
+                    position: fixed;
+                    z-index: 2;
+                    background-color: #ffffff;
+                }
+                #pause {
+                    position: fixed;
+                    z-index: 3;
+                }
+
+                #Pause {
+                    position: fixed;
+                    z-index: 2;
+                }
+                #canvas2 {
+                    position: fixed;
+                    z-index: 1;
+                }
+
+                #pagethree {
+                    display: none;
+                }
+                #div4 {
+                    position: fixed;
+                    z-index: 999;
+                }
+                /*#Back2 {
+                    position:static;
+                    margin: 0;
+                    padding: 0;
+                }*/
+            </style>
+        </div>
+    
+    <div id="pagefour">
+        <!--game over page-->
+
+   
+
+
+        <div id="Sound4" style="position: absolute;">
+            <a href="javascript:Sound();">
+                <img id="mute4"
+                     alt="Mute"
+                     border="0" />
+            </a>
+        </div>
+
+        <img id="Rock3" src="images/Rock3.png" style="width:100%; height:100%;">
+        <canvas id="canvas3"></canvas>
+        <div id="Again" style="position: absolute;">
+            <a onclick="show('pageone', 'pagezero', 'pagethree', 'pagetwo', 'pagefour');" id='replay' class="ui-btn">Play Again</a>
+        </div>
+        <div id="ToHomePage" style="position: absolute;">
+            <a onclick="window.location.href = 'http://focusandfinishgames.net'" id='tohomepage' class="ui-btn">To Home Page</a>
+        </div>
+        <!-- <div id="Post" style="position: absolute;">
+            <a onclick="postToFeed();" id='PostScore' class="ui-btn">Post Score on FB</a>
+        </div> -->
+       <!--  <div id="like3" class="fb-like" data-href="http://focusandfinish.altervista.org/EatTheGold/www/index.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+         -->
+         <div id="like3" class="fb-like" data-href="http://focusandfinishgames.net/games/eatthegold/www/index.html" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+
+        <!-- <div id="ad2">
+            <script type="text/javascript">
+                /* <![CDATA[ */
+                document.write('<s' + 'cript type="text/javascript" src="http://en.ad.altervista.org/js.ad/size=120X600/r=' + new Date().getTime() + '"><\/s' + 'cript>');
+                /* ]]> */
+            </script>
+        </div> -->
+
+
+
+    <style>
+         #ad2 {
+                        z-index: 99;
+                        position: fixed;
+
+                    }
+        #like3{
+                        position: fixed;
+                        z-index: 999;
+                    }
+         #PostScore {
+                    position:fixed;
+                    margin: 0;
+                    padding: 0;
+                    z-index: 999;
+                    background-color: #ffffff;
+                }
+        #mute4 {
+                    position: fixed;
+                    z-index: 99;
+                }
+
+                #Sound4 {
+                    position: fixed;
+                    z-index: 99;
+                }
+        #pagefour {
+            display: none;
+        }
+        #canvas3{
+                position:fixed;
+            z-index: 2;
+        }
+        #Rock3 {
+                position:fixed;
+            }
+        #replay {
+                    position:fixed;
+                    margin: 0;
+                    padding: 0;
+                    z-index: 999;
+                    background-color: #ffffff;
+                }
+                #tohomepage {
+                    position:fixed;
+                    margin: 0;
+                    padding: 0;
+                    z-index: 999;
+                    background-color: #ffffff;
+                }
+    </style>
+</div>
+
+</body>
+</html>
